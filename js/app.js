@@ -3,7 +3,7 @@ Cookies.set(`token`, `${response[`data`][`token`]}`);
 location.href = `logout.html`;
 }
 function failure_token(error){
-box[`innerHTML`] += `<h2>Error!!!</h2>`;
+box[`innerHTML`] = `<h2>Invalid/missing user id or password</h2>`;
 }
 
 function submit_function(details){
